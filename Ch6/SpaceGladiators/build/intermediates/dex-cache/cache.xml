@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Workspaces\Deeep Games\Space Gladiators\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2a82e826b275b4a476deb2b800f2f0977ccecbc4">
+        <dex dex="D:\Workspaces\Deeep Games\Space Gladiators\android\build\intermediates\pre-dexed\debug\core-1.0-34fc5f2ff6d87234e1d6e167faffe389e927a8b8.jar" />
+    </item>
+
+</items>

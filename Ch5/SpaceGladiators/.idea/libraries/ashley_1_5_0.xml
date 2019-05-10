@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ashley-1.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.5.0/b3787592a756b2e4629fec7fa0bb6cf9fcf35920/ashley-1.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.ashley/ashley/1.5.0/dcc5901059a2fcb367a92598b1380aa83de6147d/ashley-1.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

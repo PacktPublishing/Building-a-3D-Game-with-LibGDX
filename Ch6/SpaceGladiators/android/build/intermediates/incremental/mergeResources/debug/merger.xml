@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Workspaces\Deeep Games\Space Gladiators\android\res"><file name="ic_launcher" path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi" type="drawable"/><file name="ic_launcher" path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file name="ic_launcher" path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi" type="drawable"/><file path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\values\strings.xml" qualifiers=""><string name="app_name">Space Gladiators</string></file><file path="D:\Workspaces\Deeep Games\Space Gladiators\android\res\values\styles.xml" qualifiers=""><style name="GdxTheme" parent="android:Theme">
+		<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style></file></source><source path="D:\Workspaces\Deeep Games\Space Gladiators\android\build\generated\res\rs\debug"/><source path="D:\Workspaces\Deeep Games\Space Gladiators\android\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="D:\Workspaces\Deeep Games\Space Gladiators\android\src\debug\res"/></dataSet><mergedItems/></merger>

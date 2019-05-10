@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<groupId>com.badlogicgames.jlayer</groupId>
+	<artifactId>jlayer</artifactId>
+	<version>1.0.1-gdx</version>
+	<packaging>jar</packaging>
+
+	<name>jlayer-libgdx</name>
+	<description>
+		Jlayer version used in libgdx.
+		Fixed some NPEs, changed how buffering happens, deleted most of the classes, everything not related to decoding and half of what was related to decoding but not needed.
+		Added support for reading replay gain out of the mp3.
+	</description>
+
+	<url>http://github.com/libgdx/jlayer-gdx</url>
+	<issueManagement>
+		<url>http://github.com/libgdx/jlayer-gdx/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License (LGPL), Version 2.1</name>
+			<url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>Developers</id>
+			<url>http://code.google.com/p/libgdx/people/list</url>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:https://github.com/libgdx/jlayer-gdx.git</connection>
+		<developerConnection>scm:git:https://github.com/libgdx/jlayer-gdx.git</developerConnection>
+		<url>http://github.com/libgdx/jlayer-gdx/</url>
+	</scm>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>resources</directory>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.4.4</version>
+				<extensions>true</extensions>
+				<configuration>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<serverId>sonatype-nexus-staging</serverId>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>release-sign-artifacts</id>
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<keyname>${sign.key}</keyname>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>
