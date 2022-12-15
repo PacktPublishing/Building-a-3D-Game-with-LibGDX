@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781785288418)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Building a 3D Game with LibGDX
 
 <a href="https://www.packtpub.com/game-development/building-3d-game-libgdx?utm_source=github&utm_medium=repository&utm_campaign=9781785288418 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/8418cov.jpg" alt="Building a 3D Game with LibGDX" height="256px" align="right"></a>
